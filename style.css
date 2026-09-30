@@ -47,38 +47,57 @@ header{position:fixed;z-index:20;top:0;left:0;right:0;height:72px;padding:0 4vw;
   position:relative;
   overflow:hidden;
 }
+
 .hero-ad4-composition .hero-copy{
   min-width:0;
-  padding:114px 5vw 38px 6vw;
+  padding:45px 5vw 40px 6vw;
+  box-sizing:border-box;
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:flex-start;
-  background:linear-gradient(90deg,#fff 0%,#fff 78%,rgba(255,255,255,.98) 86%,rgba(255,255,255,.72) 93%,rgba(255,255,255,0) 100%);
+  background:linear-gradient(
+    90deg,
+    #fff 0%,
+    #fff 76%,
+    rgba(255,255,255,.98) 85%,
+    rgba(255,255,255,.78) 93%,
+    rgba(255,255,255,0) 100%
+  );
   position:relative;
   z-index:3;
 }
+
 .hero-section-no{
   font-size:10px;
   font-weight:600;
   letter-spacing:.12em;
   text-transform:uppercase;
   color:var(--blue);
-  margin-bottom:18px;
+  margin-bottom:14px;
 }
+
 .hero-ad4-composition h1{
   font-family:"Manrope",Arial,sans-serif;
-  font-size:clamp(54px,6vw,82px);
-  line-height:.94;
+  font-size:clamp(54px,5.2vw,70px);
+  line-height:.96;
   font-weight:500;
   letter-spacing:-.055em;
   color:#54565a;
   margin:0;
 }
-.hero-ad4-composition h1 span{color:var(--blue)}
-.hero-ad4-composition h1 span em{font-style:normal;color:#54565a}
+
+.hero-ad4-composition h1 span{
+  color:var(--blue);
+}
+
+.hero-ad4-composition h1 span em{
+  font-style:normal;
+  color:#54565a;
+}
+
 .hero-kicker{
-  margin:24px 0 0;
+  margin:18px 0 0;
   font-size:10px;
   line-height:1.4;
   font-weight:600;
@@ -86,6 +105,7 @@ header{position:fixed;z-index:20;top:0;left:0;right:0;height:72px;padding:0 4vw;
   color:#6f8193;
   text-transform:none;
 }
+
 .hero-ad4-composition .hero-visual{
   position:relative;
   min-width:0;
@@ -95,6 +115,7 @@ header{position:fixed;z-index:20;top:0;left:0;right:0;height:72px;padding:0 4vw;
   align-self:stretch;
   z-index:1;
 }
+
 .hero-ad4-composition .hero-visual img{
   width:100%;
   height:100%;
@@ -103,6 +124,7 @@ header{position:fixed;z-index:20;top:0;left:0;right:0;height:72px;padding:0 4vw;
   object-position:center;
   image-rendering:auto;
 }
+
 @media(max-width:900px){
   .hero-ad4-composition{
     height:auto;
@@ -110,11 +132,20 @@ header{position:fixed;z-index:20;top:0;left:0;right:0;height:72px;padding:0 4vw;
     grid-template-columns:1fr;
     margin-top:72px;
   }
-  .hero-ad4-composition .hero-copy{padding:55px 25px 45px}
-  .hero-ad4-composition h1{font-size:54px}
-  .hero-ad4-composition .hero-visual{height:300px}
-}
 
+  .hero-ad4-composition .hero-copy{
+    padding:55px 25px 45px;
+    background:#fff;
+  }
+
+  .hero-ad4-composition h1{
+    font-size:54px;
+  }
+
+  .hero-ad4-composition .hero-visual{
+    height:300px;
+  }
+}
 
 /* SCHWARZ DIGITS CAMPUS — preserve the approved image organization */
 .schwarz-images{position:relative;min-height:560px;display:grid;grid-template-columns:1.35fr .65fr;gap:12px;align-items:stretch;background:#e7edf2;overflow:visible}
